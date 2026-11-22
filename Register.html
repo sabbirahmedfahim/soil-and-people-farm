@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join us - মাটি ও মানুষ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-page">
+
+  <main class="reg-card">
+
+    <a class="close" href="index.html" title="Close">&times;</a>
+
+    <h2 class="form-title">Registration Form</h2>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+
+      <h3 class="form-section">About you</h3>
+
+      <div class="field-row">
+        <div>
+          <label for="fullname"><span class="req">*</span> Full name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+          <label for="phone"><span class="req">*</span> Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div>
+          <label for="email"><span class="req">*</span> Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="password"><span class="req">*</span> Password</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend><span class="req">*</span> Gender</legend>
+        <label class="choice" for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label class="choice" for="female"><input type="radio" id="female" name="gender" value="female" required> Female</label>
+      </fieldset>
+
+      <h3 class="form-section">Your link with the farm</h3>
+
+      <fieldset>
+        <legend>What are you interested in?</legend>
+        <label class="choice" for="dairy"><input type="checkbox" id="dairy" name="interests" value="cattle-and-dairy"> Cattle &amp; dairy</label>
+        <label class="choice" for="goats"><input type="checkbox" id="goats" name="interests" value="goat-rearing"> Goat rearing</label>
+        <label class="choice" for="vegetables"><input type="checkbox" id="vegetables" name="interests" value="vegetables-and-crops"> Vegetables &amp; crops</label>
+        <label class="choice" for="orchard"><input type="checkbox" id="orchard" name="interests" value="fruit-orchard"> Fruit orchard</label>
+      </fieldset>
+
+      <div class="field-row">
+        <div>
+
+          <label for="role"><span class="req">*</span> How would you like to be involved?</label>
+          <select id="role" name="role" required>
+            <option value="">-- Choose one --</option>
+            <option value="visitor">Visit the farm</option>
+            <option value="buyer">Buy farm produce</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+        </div>
+        <div>
+
+          <label for="visitdate">Preferred visit date</label>
+          <input type="date" id="visitdate" name="visitdate">
+        </div>
+      </div>
+
+      <label for="message">What does the land mean to you?</label>
+      <textarea id="message" name="message" rows="3" placeholder="A few words are enough."></textarea>
+
+      <label class="terms" for="terms">
+        <input type="checkbox" id="terms" name="terms" value="agreed" required>
+        I agree to the terms and conditions
+      </label>
+
+      <div class="actions">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <p class="note">Already a member? <a href="login.html">Login</a></p>
+  </main>
+
+</body>
+</html>
